@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar"></header>
+
+    <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+
+
+    <section class="projects">
+
+        <h1>Dự án của tôi</h1>
+        <p class="subtitle">
+            Dưới đây là một số dự án cá nhân mà tôi đã thực hiện trong quá trình học tập và phát triển kỹ năng lập
+            trình.Các dự án dưới đây thể hiện kinh nghiệm của tôi trong việc xây dựng ứng dụng web,
+            thiết kế hệ thống backend và phát triển phần mềm với các công nghệ hiện đại.
+        </p>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <a href="https://www.youtube.com/watch?v=pUwmorkHOvA" target="_blank">
+                    <img src="https://img.youtube.com/vi/pUwmorkHOvA/maxresdefault.jpg" class="project-img">
+                </a>
+
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/pUwmorkHOvA?autoplay=1&mute=1&controls=0" frameborder="0"
+                        allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">Web Jobs</h3>
+
+                    <p class="project-desc">
+                        Website này được xây dựng với mục tiêu cung cấp một nền tảng kết nối giữa các ứng viên tìm việc
+                        và các nhà tuyển dụng. Ứng dụng web sử dụng công nghệ ASP.NET Core MVC kết hợp với SQL Server để
+                        xây
+                        dựng và quản lý dữ liệu hiệu quả, nhằm hỗ trợ người dùng trong việc tìm kiếm công việc phù hợp
+                        hoặc đăng tin tuyển dụng một cách dễ dàng.
+                    </p>
+
+                    <a href="https://github.com/baonguyn123/web-tim-viec-lam.git" target="_blank" class="project-btn">
+                        Xem GitHub
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="project-card">
+
+                <a href="https://www.youtube.com/watch?v=ou1Hz_AnK4w" target="_blank">
+                    <img src="https://img.youtube.com/vi/ou1Hz_AnK4w/maxresdefault.jpg" class="project-img">
+                </a>
+
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/ou1Hz_AnK4w?autoplay=1&mute=1&controls=0" frameborder="0"
+                        allow="autoplay" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">App Jobs</h3>
+
+                    <p class="project-desc">
+                        App Jobs được xây dựng dựa trên sự phát triển của dự án web Jobs với mục tiêu cung cấp một nền
+                        tảng kết nối giữa các ứng viên tìm việc và các nhà tuyển dụng. Ứng dụng web sử dụng công nghệ
+                        Flutter kết hợp với SQL Server và API để xây dựng và quản lý dữ liệu hiệu quả, nhằm hỗ trợ người
+                        dùng trong việc tìm kiếm công việc phù hợp hoặc đăng tin tuyển dụng một cách dễ dàng.
+                    </p>
+
+                    <a href="https://github.com/baonguyn123/APP-TIM-VIEC-LAM.git" target="_blank" class="project-btn">
+                        Xem GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
