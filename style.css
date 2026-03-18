@@ -263,7 +263,7 @@ body {
 
 .resume-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     max-width: 1100px;
     margin: auto;
@@ -421,6 +421,20 @@ body {
     font-weight: 500;
     color: #334155;
 }
+.github-link{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 14px;
+    background:#333;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.github-link:hover{
+    background:#555;
+}
 
 /* ===== GLOBAL ===== */
 
@@ -558,4 +572,15 @@ body {
         font-size: 28px;
         animation: bounce 2s infinite;
     }
+}
+
+
+@media (max-width:768px) {
+  .resume-card{
+   width: 304px;
+  }
+  .resume{
+    width: 400px;
+  }
+
 }
